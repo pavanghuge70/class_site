@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floating image</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .img-container{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="../Picture/sea_town.jpg" alt="Italy" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="../Picture/forest_brige.jpg" alt="Forest" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="../Picture/mountains.jpg" alt="Mountains" style="width: 100%;">
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="../Picture/img_girl.jpg" alt="girl" style="width: 100%; height: 300px;">
+        </div>
+        <div class="img-container">
+            <img src="../Picture/lif_fall.jpg" alt="Lif" style="width: 100%; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

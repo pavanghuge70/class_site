@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.Y. CSE</title>
+    <style>
+        body{
+            background-image: url(../Picture/lif_fall.jpg);
+            background-repeat: no-repeat;
+            /* background-position: center;  */
+            background-size: cover; 
+            text-align: center;
+            margin-top: 7cm;
+        }
+        button
+        {
+            background-color: orange;
+            font-size: 16px;
+            border-radius: 15px;
+            
+        }
+        input[type=text],input[type=password]
+        {
+            background-color: gray;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <label for="uname">User Name</label>
+    <input type="text" id="uname" required><br><br>
+    <label for="pwd">password</label>
+    <input type="password" id="pwd" maxlength="10" required><br><br><br>
+    <!-- <button type="submit">Login</button> -->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Login</button>
+    
+</body>
+</html>
